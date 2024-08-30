@@ -28,15 +28,17 @@ while(true) {
     hits.forEach(hit => {
         let filename = `${hit["id"]}.jpg`;
         let fileURL = `${hit["largeImageURL"]}`
-        
-        const file = fs.createWriteStream(`img/${filename}`);
-        https.get(fileURL, function(response) {
-            response.pipe(file);
 
-            file.on("finish", () => {
-                file.close();
+        if (!fs.existsSync(`img/${filename}`)) {
+            const file = fs.createWriteStream(`img/${filename}`);
+            https.get(fileURL, function(response) {
+                response.pipe(file);
+    
+                file.on("finish", () => {
+                    file.close();
+                });
             });
-        });
+        }
     });
 
     console.log(`Page ${i} Done!`);
