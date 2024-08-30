@@ -21,6 +21,16 @@ const writeClient = userClient.writeClient;
 
 //Get random image from directory
 let files = fs.readdirSync(`img/`);
+
+//If list exists remove deleted files
+if (fs.existsSync('deletedImages.txt')) {
+  let deletedFiles = fs.readFileSync('deletedImages.txt').toString().split("\n");
+
+  files = files.filter( function( el ) {
+    return deletedFiles.indexOf( el ) < 0;
+  } );
+};
+
 let randomFile = "img/"+files[Math.floor(Math.random() * files.length)];
 
 //Upload image to Twitter and get its ID
