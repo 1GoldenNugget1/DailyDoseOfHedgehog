@@ -8,6 +8,7 @@
   "license": "d",
   "private": true,
   "dependencies": {
+    "dot-env": "^0.0.1",
     "twitter-api-v2": "^1.17.2"
   }
 }

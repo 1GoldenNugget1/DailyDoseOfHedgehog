@@ -1,20 +1,16 @@
-import { CategoryChannel } from 'discord.js';
 import { TwitterApi } from 'twitter-api-v2';
+require('dotenv').config()
 
 //Create new twitter client with oauth 1.0
 const userClient = new TwitterApi({
-    appKey: 'consumerAppKey',
-    appSecret: 'consumerAppSecret',
-    accessToken: 'accessOAuthToken',
-    accessSecret: 'accessOAuthSecret',
+    appKey: process.env.appKey,
+    appSecret: process.env.appSecret,
+    accessToken: process.env.accessToken,
+    accessSecret: process.env.accessSecret,
   });
   
 //Create a write client
 const writeClient = userClient.writeClient;
 
 //Tweet
-await userClient.v2.tweet("Hello hedgehog!");
-
-
-
-  
+await writeClient.v2.tweet("Hello hedgehog!");

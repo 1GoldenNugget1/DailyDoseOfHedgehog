@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+dot-env@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/dot-env/-/dot-env-0.0.1.tgz#e4434cb8c69143e445bc28a729437e4fabd88c80"
+  integrity sha512-SajHtzm3v7yjMH8DW9xY+4i7Zv/cN3aMtLVy0mRMuZu8L9qRCR7CNqcl4KBbG27e5Up4BpSlEyPXXLNbSAe2DQ==
+
 twitter-api-v2@^1.17.2:
   version "1.17.2"
   resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.17.2.tgz#cee633a62511c48866d0c5bf1280ab4e3dfbb72b"
