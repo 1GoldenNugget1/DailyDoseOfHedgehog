@@ -22,3 +22,4 @@ let randomFile = "img/"+files[Math.floor(Math.random() * files.length)];
 const mediaId = await userClient.v1.uploadMedia(randomFile);
 //Post a tweet with image's ID
 await userClient.v2.tweet("🦔", {media: {media_ids: [mediaId]}});
+
