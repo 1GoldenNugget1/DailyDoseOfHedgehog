@@ -9,20 +9,12 @@
   "private": true,
   "dependencies": {
     "dotenv": "^16.4.5",
-<<<<<<< HEAD
-=======
     "node-fetch": "^3.3.2",
->>>>>>> 6bd7396fa3ba99b21c55f315dfe0ab3780a279ad
     "nodemon": "^3.1.4",
     "twitter-api-v2": "^1.17.2"
   },
   "scripts": {
-<<<<<<< HEAD
-    "run": "node ./index.mjs",
-    "download": "node ./downloader.js"
-=======
     "dev": "node ./index.mjs",
     "download": "node ./downloader.mjs"
->>>>>>> 6bd7396fa3ba99b21c55f315dfe0ab3780a279ad
   }
 }
