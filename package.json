@@ -1,0 +1,13 @@
+{
+  "name": "d",
+  "version": "d",
+  "description": "d",
+  "main": "d",
+  "repository": "d",
+  "author": "d",
+  "license": "d",
+  "private": true,
+  "dependencies": {
+    "twitter-api-v2": "^1.17.2"
+  }
+}
