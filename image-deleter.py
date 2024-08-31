@@ -43,3 +43,5 @@ for file in files:
         continue
     if k==27:
         break
+    else:
+        continue
