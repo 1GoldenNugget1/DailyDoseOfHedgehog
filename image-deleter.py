@@ -1,5 +1,3 @@
-import keyboard
-
 import cv2
 
 from os import listdir
